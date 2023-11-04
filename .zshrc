@@ -18,6 +18,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # ZSH alias
 alias wol="ssh pi 'wakeonlan 40:B0:76:A5:4B:DD'"
+alias nv="nvim"
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
