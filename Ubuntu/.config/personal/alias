@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+alias wol="ssh pi 'wakeonlan 40:B0:76:A5:4B:DD'"
+alias nv="nvim"
+alias mixer="alsamixer"
+alias asdf="setxkbmap -layout "br" -variant "dvorak""
+alias aoeu="setxkbmap -layout "br" "
