@@ -1,0 +1,76 @@
+# Configuration for Alacritty, the GPU enhanced terminal emulator.
+
+# Import additional configuration files
+#
+# Imports are loaded in order, skipping all missing files, with the importing
+# file being loaded last. If a field is already present in a previous import, it
+# will be replaced.
+#
+# All imports must either be absolute paths starting with `/`, or paths relative
+# to the user's home directory starting with `~/`.
+# import:
+#   - ~/.config/alacritty/colors/flat_remix.yaml
+
+window:
+  # Allow terminal applications to change Alacritty's window title.
+  dynamic_title: true
+
+
+# Font configuration
+font:
+  normal:
+    family: JetBrainsMono Nerd Font
+    # The `style` can be specified to pick a specific face.
+    style: Regular
+
+  # Point size
+  size: 16.0
+
+# If `true`, bold text is drawn using the bright color variants.
+draw_bold_text_with_bright_colors: true
+
+colors:
+  # COLORSCHEME: flat_remix.yaml
+  primary:
+    background: '0x000000'
+    foreground: '0xFFFFFF'
+
+  normal:
+  # Bright colors
+    black: '0x1F2229'
+    red: '0xEC0101'
+    green: '0x4BC553'
+    yellow: '0xFF8A18'
+    blue: '0x277FFF'
+    magenta: '0xD71655'
+    cyan: '0x05A1F7'
+    white: '0xFFFFFF'
+
+
+  bright:
+    black: '0x1F2229'
+    red: '0xD41919'
+    green: '0x5EBDAB'
+    yellow: '0xFEA44C'
+    blue: '0x367bf0'
+    magenta: '0xBF2E5D'
+    cyan: '0x49AEE6'
+    white: '0xFFFFFF'
+
+  cursor:
+    cursor: CellForeground
+    text: CellBackground
+
+  dim:
+    black: '0x100F0F'
+    red: '0xAF3029'
+    green: '0x66800B'
+    yellow: '0xAD8301'
+    blue: '0x205EA6'
+    magenta: '0xA02F6F'
+    cyan: '0x24837B'
+    white: '0xFFFCF0'
+  indexed_colors: []
+  selection:
+    background: '#4e5a65'
+    text: '#d8dee9'
