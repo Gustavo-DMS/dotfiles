@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-export STOW_FOLDERS="bin,i3,fonts,nvim,tmux,Ubuntu,zsh,alacritty"
+export STOW_FOLDERS="bin,i3,fonts,nvim,tmux,Ubuntu,zsh,alacritty,rofi,antigen,dunst,hyprland"
 export DOTFILES=$HOME/.dotfiles
 
 addToPath() {
