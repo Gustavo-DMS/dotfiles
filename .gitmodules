@@ -1,6 +1,3 @@
 [submodule "neovim"]
 	path = .config/nvim
 	url = https://github.com/Gustavo-DMS/neovim.git
-[submodule "hyprland/.config/hypr/themes/winter"]
-	path = hyprland/.config/hypr/themes/winter
-	url = https://github.com/AmadeusWM/hyprland-winter.git
