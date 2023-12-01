@@ -29,7 +29,7 @@
       (label :halign "start" :class "song" :wrap "false" :limit-width 12 :text song)
       (label :halign "start" :class "song_artist" :wrap "true" :limit-width 15 :text song_artist)
     )))
-    
+
     (defwidget music_ctl []
       (box :orientation "v" :spacing 1 :halign "center" :space-evenly "true" :vexpand "false" :hexpand "false" :class "msc_ctl_bg"
     (button :class "song_btn_prev" :onclick "scripts/music previous" "")
@@ -41,64 +41,64 @@
 ; onchange: with playerctl (position [OFFSET][+/-]  Command the player to go to the position or seek forward/backward OFFSET in seconds)
 (defwidget music_prog []
     (box :class "music_prog_bg"
-        (scale 
-        :min 0 :max 101 
-        :value song_perc 
+        (scale
+        :min 0 :max 101
+        :value song_perc
         :onchange "scripts/music setposition {}"
         :width 280 :vexpand "false" :class "song_prog")))
 
 (defwidget sidebar_audio []
-    (box 
+    (box
       :class "music_audio_container"
-      :orientation "h" 
+      :orientation "h"
       :hexpand "true"
       :halign "fill"
-      (box 
-        :class "sidebar_volume_bar" 
-        :orientation "v" 
+      (box
+        :class "sidebar_volume_bar"
+        :orientation "v"
         :space-evenly "false"
-                        (scale 
-                          :flipped "true" 
-                          :orientation "v" 
+                        (scale
+                          :flipped "true"
+                          :orientation "v"
                           :vexpand true
-                          :min 0 
-                          :max 101 
-                          :value volume_percent 
+                          :min 0
+                          :max 101
+                          :value volume_percent
                           :onchange "amixer -D pulse sset Master {}%" )
-                        (label  
-                          :text "墳" 
+                        (label
+                          :text " "
                           :vexpand false
                           :class "sidebar_vol_icon")
                       )
-      (box 
-        :class "sidebar_mic_bar" 
-        :orientation "v" 
+      (box
+        :class "sidebar_mic_bar"
+        :orientation "v"
         :space-evenly "false"
-                        (scale 
-                          :flipped "true" 
-                          :orientation "v" 
+                        (scale
+                          :flipped "true"
+                          :orientation "v"
                           :vexpand true
-                          :min 0 
-                          :max 101 
-                          :value mic_percent 
+                          :min 0
+                          :max 101
+                          :value mic_percent
                           :onchange "amixer -D pulse sset Capture {}%")
-                        (label  
-                          :text "" 
+                        (label
+                          :text ""
                           :vexpand false
                           :class "sidebar_mic_icon"))
-        (box 
-        :class "sidebar_spotify_bar" 
-        :orientation "v" 
+        (box
+        :class "sidebar_spotify_bar"
+        :orientation "v"
         :space-evenly "false"
-                        (scale 
-                          :flipped "true" 
-                          :orientation "v" 
+                        (scale
+                          :flipped "true"
+                          :orientation "v"
                           :vexpand true
-                          :min 0 
-                          :max 101 
-                          :value player_volume 
+                          :min 0
+                          :max 101
+                          :value player_volume
                           :onchange "scripts/music sp_volume {}")
-                        (label  
-                          :text "" 
+                        (label
+                          :text ""
                           :vexpand false
                           :class "sidebar_spotify_icon"))))

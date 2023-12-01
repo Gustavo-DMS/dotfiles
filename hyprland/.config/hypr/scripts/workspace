@@ -3,7 +3,7 @@
 cmd=$1
 workspaceId=$2
 
-focusedMonitor=$(hyprctl monitors -j | jq -r '.[] | select(.focused == true) | .name') 
+focusedMonitor=$(hyprctl monitors -j | jq -r '.[] | select(.focused == true) | .name')
 focusedMonitorVal=0
 
 if [[ $focusedMonitor == "DP-1" ]]; then
@@ -35,7 +35,7 @@ doc() {
     echo """
 Usage:
 workspace [Command] [Workspace Id]
-This tool is used for multiple monitor setups, 
+This tool is used for multiple monitor setups,
 it increments each workspace id with 10*(monitor_id).
 Such that each monitor can have its own set of workspaces.
 
@@ -47,9 +47,9 @@ Command:
 """
 }
 
-case $cmd in 
+case $cmd in
   visit) 		visit ;;
-  move) 		move ;; 
+  move) 		move ;;
   movesilent) 	movesilent ;;
   test) 		test ;;
   *) doc;;

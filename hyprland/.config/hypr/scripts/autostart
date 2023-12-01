@@ -26,7 +26,7 @@ wl-paste --watch cliphist store &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 ## Wallpaper init
-hyperpaper &
+hyprpaper &
 
 # ... this might not be necessary anymore ? idk
 dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &
