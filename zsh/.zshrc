@@ -9,7 +9,6 @@ fi
 antigen use oh-my-zsh
 
 antigen theme romkatv/powerlevel10k
-ENABLE_CORRECTION="true"
 
 antigen bundle unixorn/autoupdate-antigen.zshplugin
 antigen bundle zsh-users/zsh-autosuggestions
@@ -33,7 +32,7 @@ else
 fi
 
 export NVM_LAZY_LOAD=true
-export NVM_COMPLETION=true
+export NVM_LAZY_LOAD=true
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

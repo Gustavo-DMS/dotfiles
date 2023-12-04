@@ -12,7 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
     { "folke/which-key.nvim",      cond = not vim.g.vscode },
-    { "bluz71/vim-moonfly-colors", name = "moonfly",       lazy = false, priority = 500, cond = not vim.g.vscode },
+    { "bluz71/vim-moonfly-colors", name = "moonfly",       lazy = false, priority = 1000, cond = not vim.g.vscode },
     {
         "olimorris/onedarkpro.nvim",
         priority = 1000 -- Ensure it loads first
