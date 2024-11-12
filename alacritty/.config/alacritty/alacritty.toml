@@ -1,0 +1,19 @@
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[font]
+size = 16.0
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[window]
+dynamic_title = true
+opacity = 0.75
+
+[env]
+term = "xterm-256color"
+
+[general]
+import = ["~/.cache/wal/colors-allacritty.toml"]
