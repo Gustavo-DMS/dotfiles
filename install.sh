@@ -1,10 +1,7 @@
 #!/bin/bash
 
-pastas=$(gum choose --no-limit --cursor-prefix "( ) " --selected-prefix "(x) " --unselected-prefix "( ) " `ls`)
-for pasta in $pastas; do
-    if [ $pasta != 'sddm' ]; then
-        echo "stow: $pasta"
-        stow -D $pasta
-        stow $pasta
-    fi
-done
+# instalar o yay
+source ./.scripts/yay.sh
+
+# fazer o symlink dos arquivos de configuração
+source ./.scripts/stowing.sh
