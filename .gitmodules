@@ -1,7 +1,3 @@
 [submodule ".config/neovim"]
 	path = nvim/.config/nvim
 	url = git@github.com:Gustavo-DMS/neovim.git
-
-[submodule "wallpaper"]
-	path = wallpaper/wallpaper
-	url = https://github.com/mylinuxforwork/wallpaper.git
