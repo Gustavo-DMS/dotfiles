@@ -1,5 +1,4 @@
 export XDG_CONFIG_HOME=$HOME/.config
-
 PERSONAL=$XDG_CONFIG_HOME/personal
 
 source $PERSONAL/env
@@ -7,7 +6,20 @@ for i in `find -L $PERSONAL`; do
     source $i
 done
 
-bindkey -s ^f "tmux-sessionizer\n"
+
+addToPath() {
+    if [[ "$PATH" != *"$1"* ]]; then
+        export PATH=$PATH:$1
+    fi
+}
+
+addToPathFront() {
+    if [[ "$PATH" != *"$1"* ]]; then
+        export PATH=$1:$PATH
+    fi
+}
+
+bindkey -s ^f "tmux-sessionizer.sh\n"
 
 addToPathFront $HOME/.local/scripts
 addToPathFront $HOME/.local/bin
